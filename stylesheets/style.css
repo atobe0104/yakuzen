@@ -1,0 +1,50 @@
+@charset "UTF-8";
+body { background-color: #fffffb; position: relative; font-size: 14px; color: #777; background-size: 100% auto; font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro","メイリオ",Meiryo,sans-serif; background: url("../images/background.png"); -webkit-font-smoothing: antialiased; }
+body header { width: 100%; height: 400px; text-align: center; background: url("../images/header_background.png") no-repeat; background-size: cover; padding: 50px 0; }
+body header .main_visual { width: 630px; margin: 0 auto; }
+body .content-wrap { width: 960px; margin: 0 auto; }
+body .content-wrap span.strong_point { font-size: 16px; color: #d65a52; font-weight: bold; }
+body .content-wrap .bloc { border-top: 2px dashed #f23096; padding: 30px 0; }
+body .content-wrap .bloc:first-child { border: none; }
+body .content-wrap .bloc h4 { font-size: 20px; }
+body .content-wrap .bloc h3 { margin: 28px 0; text-align: center; color: #d65a52; }
+body .content-wrap .bloc p { line-height: 30px; }
+body .content-wrap .bloc p.content_text { text-align: center; font-size: 16px; }
+body .content-wrap .bloc p.prof_image { text-align: center; }
+body .content-wrap .bloc p.prof_image img { width: 120px; margin: 0 auto; }
+body .content-wrap .bloc .target { width: 400px; margin: 0 auto; }
+body .content-wrap .bloc .mini_strong { font-size: 12px; color: #d65a52; font-weight: bold; }
+body .content-wrap label { display: inline-block; max-width: 100%; margin-bottom: 5px; line-height: 22px; font-weight: bold; font-size: 15px; }
+body .profile_wrap { background: url("../images/white_back.png"); overflow: hidden; border-radius: 8px; padding: 24px; }
+body .rader_wrap { clear: both; width: 100%; text-align: center; padding: 56px 0; }
+body .rader_wrap #radarChart { width: 600px; height: 600px; margin: 0 auto; }
+body .user_type_wrap { background: url("../images/type_back.jpg") no-repeat; padding: 24px; background-size: 100% 100%; border: 6px #fb7d00 solid; width: 860px; min-height: 400px; margin: 16px auto; color: #fff; display: none; }
+body .user_type_wrap h1.type_title { text-align: center; margin: 40px 0; }
+body .user_type_wrap h4.user_type { font-weight: bold; color: #d65a52; }
+body .user_type_wrap #user_type01, body .user_type_wrap #user_type02, body .user_type_wrap #user_type03, body .user_type_wrap #user_type04, body .user_type_wrap #user_type05, body .user_type_wrap #user_type06 { display: none; margin: 16px 0; }
+body .user_type_wrap #user_type01.true_type, body .user_type_wrap #user_type02.true_type, body .user_type_wrap #user_type03.true_type, body .user_type_wrap #user_type04.true_type, body .user_type_wrap #user_type05.true_type, body .user_type_wrap #user_type06.true_type { display: block; }
+body .user_type_wrap #user_type01 span.type_detail_head, body .user_type_wrap #user_type02 span.type_detail_head, body .user_type_wrap #user_type03 span.type_detail_head, body .user_type_wrap #user_type04 span.type_detail_head, body .user_type_wrap #user_type05 span.type_detail_head, body .user_type_wrap #user_type06 span.type_detail_head { font-weight: bold; font-size: 20px; color: #E5DF66; }
+
+footer { margin-top: 24px; padding: 8px 0; text-align: center; width: 100%; }
+
+@media screen and (max-width: 768px) { body { background-color: #fffffb; position: relative; font-size: 10px; color: #777; background-size: 100% auto; font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro","メイリオ",Meiryo,sans-serif; background: url("../images/background.png"); }
+  body header { width: 100%; height: auto; text-align: center; background: url("../images/header_background.png") no-repeat; background-size: 100% auto; padding: 10px 0; }
+  body header .main_visual { width: 100%; margin: 0 auto; }
+  body header .main_visual img { width: 70%; }
+  body .content-wrap { width: auto; margin: 0 auto; margin-top: -10px; }
+  body .content-wrap .bloc { border-top: 2px dashed #f23096; padding: 15px 0; }
+  body .content-wrap .bloc:first-child { border: none; }
+  body .content-wrap .bloc .target { width: auto; margin: 0 auto; }
+  body .content-wrap .bloc span.strong_point { font-size: 12px; color: #d65a52; font-weight: bold; }
+  body .content-wrap .bloc h3 { margin: 14px 0; text-align: center; color: #d65a52; font-weight: bold; }
+  body .content-wrap .bloc h3 img { width: 100%; }
+  body .content-wrap .bloc p { line-height: 30px; }
+  body .content-wrap .bloc p.content_text { text-align: center; font-size: 12px; }
+  body .content-wrap .bloc p.prof_image { text-align: center; }
+  body .content-wrap .bloc p.prof_image img { width: 120px; margin: 0 auto; }
+  body .content-wrap .rader_wrap { width: 100%; text-align: center; }
+  body .content-wrap .rader_wrap #radarChart { width: 250px; height: 250px; margin: 0 auto; }
+  body .content-wrap .user_type_wrap { background: url("../images/type_back.jpg") no-repeat; padding: 24px; background-size: 100% 100%; border: 6px #fb7d00 solid; width: 96%; min-height: 400px; margin: 16px auto; color: #fff; display: none; }
+  body .content-wrap .user_type_wrap h4.user_type { font-weight: bold; color: #d65a52; }
+  body .content-wrap .user_type_wrap #user_type01, body .content-wrap .user_type_wrap #user_type02, body .content-wrap .user_type_wrap #user_type03, body .content-wrap .user_type_wrap #user_type04, body .content-wrap .user_type_wrap #user_type05, body .content-wrap .user_type_wrap #user_type06 { display: none; margin: 16px 0; }
+  body .content-wrap .user_type_wrap #user_type01.true_type, body .content-wrap .user_type_wrap #user_type02.true_type, body .content-wrap .user_type_wrap #user_type03.true_type, body .content-wrap .user_type_wrap #user_type04.true_type, body .content-wrap .user_type_wrap #user_type05.true_type, body .content-wrap .user_type_wrap #user_type06.true_type { display: block; } }

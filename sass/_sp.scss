@@ -1,0 +1,105 @@
+@media screen and (max-width:768px){
+	body{
+		background-color: #fffffb;
+		position:relative;
+		font-size:10px;
+		color:#777;
+		background-size:100% auto;
+	    font-family:"ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro","メイリオ",Meiryo,sans-serif;
+	    background: url("../images/background.png");
+		header{
+			width:100%;
+			height:auto;
+			text-align:center;
+			background:url("../images/header_background.png") no-repeat;
+			background-size:100% auto;
+			padding:10px 0;
+			.main_visual{
+				width:100%;
+				margin:0 auto;
+				img{
+					width:70%;
+				}
+			}
+		}
+		.content-wrap{
+			width:auto;
+			margin:0 auto;
+			margin-top:-10px;
+			.bloc{
+				border-top:2px dashed #f23096;
+				padding:15px 0;
+				&:first-child{
+					border:none;
+				}
+				.target{
+					width:auto;
+					margin:0 auto;
+				}
+		span{
+			&.strong_point{
+				font-size:12px;
+				color:#d65a52;
+				font-weight: bold;
+			}
+		}
+				h3{
+					margin:14px 0;
+					text-align:center;
+					color:#d65a52;
+					font-weight: bold;
+					img{
+						width:100%;
+					}
+				}
+				p{
+					line-height:30px;
+					&.content_text{
+						text-align:center;
+						font-size:12px;
+					}
+					&.prof_image{
+						text-align: center;
+						img{
+							width:120px;
+							margin:0 auto;
+						}
+					}
+				}
+			}
+			.rader_wrap{
+				width:100%;
+				text-align:center;
+				#radarChart{
+					width:250px;
+					height:250px;
+					margin:0 auto;
+				}
+			}	
+			.user_type_wrap{
+				background:url('../images/type_back.jpg') no-repeat;
+				padding:24px;
+				background-size:100% 100%;
+				border:6px #fb7d00 solid;
+				width:96%;
+				min-height:400px;
+				margin:16px auto;
+				color:#fff;
+				display:none;
+				h4{
+					&.user_type{
+						font-weight:bold;
+						color:#d65a52;			
+					}
+				}
+				#user_type01,#user_type02,#user_type03,#user_type04,#user_type05,#user_type06{
+					display:none;
+					margin:16px 0;
+					&.true_type{
+						display:block;
+					}
+				}
+			}
+		}
+	}
+}
