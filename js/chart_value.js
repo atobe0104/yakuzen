@@ -80,7 +80,20 @@ function chart() {
 	    ]
 	};
 	var ctx = document.getElementById("radarChart").getContext("2d");
-	var options = {};
+	var options = {
+		 //Boolean - 縦軸の目盛りの上書き許可
+  scaleOverride : true,
+  //** ↑がtrueの場合 **
+  //Number - 目盛りの間隔
+  scaleSteps : 8,
+  //Number - 目盛り区切りの間隔
+  scaleStepWidth : 1,
+  //Number - 目盛りの最小値
+  scaleStartValue : 0,
+  
+  scaleGridLineWidth : 2,
+  onAnimationComplete : null
+	};
 	var radarChart = new Chart(ctx).Radar(data, options);
 	var rader = chart.Radar(radarChartData, {
 	  scaleShowLabels: true,  // 目盛を表示
@@ -104,7 +117,20 @@ $(function() {
 	    ]
 	};
 	var ctx = document.getElementById("radarChart").getContext("2d");
-	var options = {};
+	var options = {
+ //Boolean - 縦軸の目盛りの上書き許可
+  scaleOverride : true,
+  //** ↑がtrueの場合 **
+  //Number - 目盛りの間隔
+  scaleSteps : 8,
+  //Number - 目盛り区切りの間隔
+  scaleStepWidth : 1,
+  //Number - 目盛りの最小値
+  scaleStartValue : 0,
+  
+  scaleGridLineWidth : 2,
+  onAnimationComplete : null
+	};
 	var radarChart = new Chart(ctx).Radar(data, options);
 	$("#cheakboxes").click(function(){
 		chart();
